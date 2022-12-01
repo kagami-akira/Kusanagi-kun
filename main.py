@@ -129,7 +129,7 @@ async def on_message(message):
 async def on_member_join(member):
     WelcomeChannel = client.get_channel(int(os.getenv('WELCOME_CH')))
     msg = f'{member.name}さん、ようこそいらっしゃいませ。必読１・２にはしっかり目を通してくださいね。'\
-    '\n' + (os.getenv('MASTER')) + '～！　お客様がお見えですよ！'
+    '\n' + <@&{int(os.getenv('MASTER'))}> + '～！　お客様がお見えですよ！'
     await WelcomeChannel.send(msg)
 
   
