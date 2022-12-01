@@ -13,8 +13,6 @@ client = discord.Client(intents=intents)
 async def on_ready():
     print('草薙くん、起動しました！'.format(client))
 
-
-
 @client.event
 async def on_message(message):
 
