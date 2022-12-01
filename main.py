@@ -49,6 +49,12 @@ async def on_message(message):
 
     if message.content == 'ただいま帰った':
         await message.channel.send('おかえりなさい。お疲れ様です。荷物お持ちしますよ～')
+        
+    if message.content == '草薙へるぷ':
+        await message.channel.send('`おみくじ：今日の運勢を占います\n
+        話題ガチャ：話題を提供します\n
+        きゅーふりよろ：声劇用にきゅーふりします\n
+        人数カウント：「声劇舞台にいる」「ミュートでない」人数と男女比を出します`')
 
     # おみくじ
     if message.content == 'おみくじ':
