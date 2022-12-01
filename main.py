@@ -53,7 +53,7 @@ async def on_message(message):
         await message.channel.send('> おみくじ：今日の運勢を占います\n'\
                                    '> 話題ガチャ：話題を提供します\n'\
                                    '> きゅーふりよろ：声劇用にきゅーふりします\n'\
-                                   '> 人数カウント：「声劇舞台にいる」「ミュートでない」人数と男女比を出します')
+                                   '> 人数カウント：「声劇舞台にいる、ミュートでない」人数と男女比を出します')
 
     # おみくじ
     if message.content == 'おみくじ':
@@ -130,7 +130,8 @@ async def on_message(message):
 @client.event
 async def on_member_join(member):
     WelcomeChannel = client.get_channel(int(os.getenv('WELCOME_CH')))
-    msg = f'{member.name}さん、ようこそいらっしゃいませ。必読１・２にはしっかり目を通してくださいね。\n' + (os.getenv('MASTER')) + '～！　お客様がお見えですよ！'
+    msg = f'{member.name}さん、ようこそいらっしゃいませ。必読１・２にはしっかり目を通してくださいね。'\
+    '\n' + (os.getenv('MASTER')) + '～！　お客様がお見えですよ！'
     await WelcomeChannel.send(msg)
 
   
