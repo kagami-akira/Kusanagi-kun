@@ -18,7 +18,7 @@ async def on_ready():
 async def on_message(message):
 
     # 音声を流す準備および音を小さく
-    source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio("Q-furi-rugi2.mp3"), volume=0.2)
+    source = discord.PCMVolumeTransformer(discord.FFmpegPCMAudio("Q-furi-rugi2.mp3"), volume=0.3)
     guild = client.get_guild(int(os.getenv('GUILD_ID')))
 
     if message.author == client.user:
