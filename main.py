@@ -121,9 +121,7 @@ async def on_message(message):
         maleinvch = set(male_idlist) & set(active_list)
         femaleinvch = set(female_idlist) & set(active_list)
 
-        await message.channel.send(f'参加者は{vch_count}人です。'\
-                                   '内訳は男性{len(maleinvch)}人：女性{len(femaleinvch)}人：'\
-                                   '性別不問{vch_count - len(maleinvch) - len(femaleinvch)}人です。')       
+        await message.channel.send(f'参加者は{vch_count}人です。内訳は男性{len(maleinvch)}人：女性{len(femaleinvch)}人：性別不問{vch_count - len(maleinvch) - len(femaleinvch)}人です。')       
     
 
 # ウェルカムメッセージ
