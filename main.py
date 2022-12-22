@@ -47,7 +47,7 @@ async def on_message(message):
         await message.channel.send('はよ寝ぇ！')
 
     if message.content == 'ただいま帰った':
-        await message.channel.send('おかえりなさい。お疲れ様です。荷物お持ちしますよ～')
+        await message.channel.send('おかえりなさい。お疲れ様です。荷物お持ちします～')
         
     if message.content == '草薙へるぷ':
         await message.channel.send('> おみくじ：今日の運勢を占います\n'\
